@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="Pagina1.html">Inicio</a></li>
+                <li><a href="Pagina2.html">Tipos de Guitarras</a></li>
+                <li><a href="Pagina3.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono"><br>
+                    
+                    <label for="fecha">Fecha de Consulta:</label>
+                    <input type="date" id="fecha" name="fecha"><br>
+                    
+                    <label for="suscripcion">¿Deseas recibir noticias?</label>
+                    <input type="checkbox" id="suscripcion" name="suscripcion"><br>
+                    
+                    <label for="consulta">Tipo de Consulta:</label>
+                    <select id="consulta" name="consulta">
+                        <option value="info">Información</option>
+                        <option value="compra">Compra de Guitarras</option>
+                        <option value="soporte">Soporte Técnico</option>
+                    </select><br>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo Guitarras</p>
+    </footer>
+</body>
+</html>

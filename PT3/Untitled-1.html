@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo de las Guitarras</title>
+<style>
+/* Regla universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+    margin: 0;
+}
+
+/* Encabezado */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(50, 50, 50);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(51, 0, 255);
+}
+
+/* Barra de navegación */
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #1100ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Contenedor general */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+/* Columnas */
+.leftcolumn {
+    flex: 75%;
+    padding: 10px;
+}
+
+.rightcolumn {
+    flex: 25%;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Tarjetas */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0000ff;
+    color: white;
+}
+
+/* Pie de página */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Encabezado -->
+<div class="header">
+    <h1>Mundo de las Guitarras</h1>
+    
+</div>
+
+<!-- Barra de navegación -->
+<div class="topnav">
+    <a href="inicio.html">Inicio</a>
+    <a href="clasicas.html">Clásicas</a>
+    <a href="electricas.html">Eléctricas</a>
+    <a href="acusticas.html" style="float: right;">Acústicas</a>
+    <a href="formulario.html" style="float: right;">Contacto</a>
+</div>
+
+<!-- Contenido principal -->
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>Tipos de Guitarras</h2>
+            <table>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Clásica</td>
+                    <td>De cuerdas de nailon, excelente para música clásica y flamenco.</td>
+                </tr>
+                <tr>
+                    <td>Acústica</td>
+                    <td>Usa cuerdas de acero, ideal para estilos como folk y pop.</td>
+                </tr>
+                <tr>
+                    <td>Eléctrica</td>
+                    <td>Funciona con amplificadores y se usa en rock, jazz y otros géneros.</td>
+                </tr>
+                <tr>
+                    <td>Electroacústica</td>
+                    <td>Similar a la acústica, pero puede amplificarse fácilmente.</td>
+                </tr>
+                <tr>
+                    <td>De 12 cuerdas</td>
+                    <td>Ofrece un sonido más lleno y armónico, popular en música folk.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Historia de las Guitarras</h2>
+            <p>La guitarra ha evolucionado durante siglos, desde los laúdes antiguos hasta las modernas eléctricas:</p>
+            <ul>
+                <li><strong>Antigüedad:</strong> Instrumentos de cuerda en Mesopotamia y Egipto.</li>
+                <li><strong>Renacimiento:</strong> Aparición de la vihuela en Europa.</li>
+                <li><strong>Siglo XX:</strong> Invención de la guitarra eléctrica revolucionó la música moderna.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>Datos Curiosos</h2>
+            <ul>
+                <li>La guitarra eléctrica fue inventada en 1931 por George Beauchamp.</li>
+                <li>El récord de la guitarra más grande del mundo mide 13 metros.</li>
+                <li>Se fabrican guitarras con materiales inusuales como plástico o metal.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Principales Accesorios</h2>
+            <ul>
+                <li>Púas</li>
+                <li>Correas</li>
+                <li>Afinadores electrónicos</li>
+                <li>Capotraste</li>
+                <li>Amplificadores</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Pie de página -->
+<div class="footer">
+    <p>Mundo de las Guitarras © 2024 - Desarrollado por [Tu Nombre]</p>
+</div>
+
+</body>
+</html>

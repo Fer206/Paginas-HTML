@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #0062ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/*Estilo del contenedor del menu*/
+.toggle-container {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo del checkbox */
+        .toggle-checkbox {
+            display: none; /* Ocultamos el checkbox */
+        }
+
+        .toggle-label {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .toggle-label:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contenido oculto inicialmente */
+        .contenido {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        /* Mostrar contenido cuando el checkbox está activado */
+        .toggle-checkbox:checked + .toggle-label + .contenido {
+            display: block;
+        }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: rgb(0, 140, 255);">Mundo Musical</h1>
+</div>
+
+<div class="topnav">
+  <a href="Pagina 3.html">Cuerdas</a>
+  <a href="Percucion.html">Percusion</a>
+  <a href="Pagina 2.html" style="float: right;">Formulario</a>
+  <a href="PagViento.html" style="float: right;">viento</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Los instrumentos</h2>
+      <h5>Instrumentos Musicales: Clasificación y tipos
+
+        Los instrumentos musicales son objetos de una o varias piezas combinadas que están destinados a la emisión de sonidos con el fin de hacer música.
+        
+        De esta simple definición parten los instrumentos más antiguos de la humanidad, y evolucionan hasta los complejos sistemas para instrumentos de hoy en día.
+        
+        Todos cuentan con algún elemento vibrador, que es el encargado de producir el sonido.</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Instrumentos Musicales: Clasificación y tipos
+
+        Los instrumentos musicales son objetos de una o varias piezas combinadas que están destinados a la emisión de sonidos con el fin de hacer música.
+        
+        De esta simple definición parten los instrumentos más antiguos de la humanidad, y evolucionan hasta los complejos sistemas para instrumentos de hoy en día.
+        
+        Todos cuentan con algún elemento vibrador, que es el encargado de producir el sonido.
+        
+        Instrumentos musicales
+        <div class="toggle-container">
+          <!-- Checkbox que controla la visibilidad -->
+          <input type="checkbox" id="toggle" class="toggle-checkbox">
+          <!-- Etiqueta como botón -->
+          <label for="toggle" class="toggle-label">Mostrar Información</label>
+          <!-- Contenido que se muestra/oculta -->
+          <div class="contenido">
+           <ol>
+             <li><a href="#Clases de instrumentos">  1 Clases de Instrumentos Musicales  </a></li>
+             <ul>
+                <li><a href="Idiofonos">1.1 Idiófonos</a></li>
+                <li>1.2 Membranófonos</li>
+                <li>1.3 Aerófonos</li>
+                <li>1.4 Cordófonos</li>
+                <li>1.5 Electrófonos</li>
+             </ul>
+             <li>2 Instrumentos Musicales. Historia</li>
+             <ul>
+                <li>2.1 Mesopotamia</li>
+                <li>2.2 Antiguo Egipto</li>
+                <li>2.3 Grecia Clásica</li>
+                <li>2.4 Imperio Romano</li>
+                <li>2.5 Edad Media</li>
+            </ul>
+           </ol>
+         </div>
+       </div>
+       <div>
+        Clases de Instrumentos Musicales
+        
+        Podemos encontrar diferentes maneras de agrupar o clasificar los instrumentos musicales.
+        
+        Las diferentes familias, o clases, se agrupan por la forma en la que se produce el sonido.
+        
+        La clasificación más completa es la que crearon en el año 1914 los musicólogos Hornbostel y Sachs.
+        
+        Los dividieron en cuatro grupos o clases principales, a los que más tarde se le añadió una quinta variedad, integrada por los instrumentos cuya sonoridad se genera por impulsos eléctricos.
+        
+        Las cinco clases o familias se dividen a su vez en pequeños grupos, formando la clasificación más completa que existe.</p>
+    </div>
+    <div class="card">
+      <h2>Idiófonos</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Los idiófonos, conocidos de forma habitual como instrumentos de percusión.
+
+        La principal característica es que el cuerpo del propio instrumento vibra, no es necesario que haya elementos en tensión, como pasa en los membranófonos.
+        
+        El cuerpo del instrumento está fabricado por un material sonoro en sí mismo. Puede ser madera, metal o cristal.
+        
+        Los instrumentos idiófonos también se clasifican en diferentes grupos dependiendo del elemento que provoca el sonido.
+        
+        Idiófonos golpeados o percutidos
+        Los mejores ejemplos de este tipo son el xilófono, la marimba, el triángulo, el gong, el cajón flamenco o la caja china.</p>
+      <p>Idiófonos chocados
+        El sonido se produce al chocar un instrumento contra otro exactamente igual, como es el caso de los platillos, las castañuelas o las claves.
+        
+        Idiófonos raspados
+        El güiro, en todas sus variedades, y la carraca son los más conocidos.
+        
+        Idiófonos sacudidos
+        Instrumentos que necesitan estar en constante movimiento para producir sonido. Las maracas, los cascabeles o las sonajas, son los más habituales.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Membranófonos</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>En los membranófonos el sonido es producido cuando vibra una membrana en tensión. Conocidos, al igual que los idiófonos, como instrumentos de percusión.
+
+        En la mayoría la membrana se percute con la mano, baquetas de madera, escobillas de distintos tipos y mazos.
+        
+        Lo más habitual es que esas membranas sean de piel animal, al menos en el origen del instrumento. Cada vez es más frecuente encontrar membranas de diversos materiales, en especial sintéticos.</p>
+        <p>Membranófonos percutidos
+          En este grupo entran instrumentos de percusión muy habituales y conocidos: Bombo, tambor, caja, timbales, congas, pandereta.
+          
+          Membranófonos frotados
+          Este es un caso diferente a los anteriores, la membrana se hace vibrar por frotación. El ejemplo más conocido es la zambomba.</p>
+    </div>
+    <div class="card">
+      <h3 id= "Aerófonos">Aerófonos</h3>
+      <p>Producen el sonido por la vibración de una columna de aire en su interior, sin necesidad de otros elementos como cuerdas o membranas.
+
+        Conocidos de forma habitual como instrumentos de viento.
+        
+        Los aerófonos se dividen en dos grupos principales, los de soplo directo y los de acción mecánica.</p>
+      <div class="fakeimg"><p>Image</p></div>
+      <p>Aerófonos de soplo directo
+        En este tipo de instrumentos es el propio ejecutante el que hace llegar el aire soplando por una embocadura.
+        
+        Se dividen en varios grupos dependiendo del tipo de embocadura que tenga el instrumento musical.
+        
+        Bisel: Flauta dulce, flauta travesera, flauta de Pan, ocarina.
+        Lengüeta simple: Clarinete, requinto, saxofón en todas sus variedades (soprano, alto, tenor y barítono).
+        Lengüeta doble: Fagot, contrafagot, oboe, corno inglés, dulzaina.
+        Boquilla: Trompeta, trombón, trompa, bombardino, tuba, fliscorno, clarí</p>
+    </div>
+    <div class="card">
+      <h3 id="Cordófonos">Cordófonos</h3>
+      <p>instrumentos musicales cuyo sonido se produce por la vibración de las cuerdas que están en tensión.
+
+        Son instrumentos de cuerda.
+        
+        Las cuerdas se pueden hacer vibrar de distintas formas.
+        
+        Cordófonos frotados
+        El músico utiliza un elemento, como puede ser al arco, para frotar las cuerdas del instrumento. En este grupo están el violín, la viola, el violonchelo, el contrabajo, la viola de gamba.</p>
+        <div style="fakeimg"><p>imgen</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Electrófonos</h2>
+  <p>Los instrumentos musicales electrófonos son los últimos en incorporarse a la clasificación de Hornbostel y Sachs.
+
+    El sonido se genera, o se modifica, gracias a los impulsos eléctricos. Se clasifican en dos grupos principales según el origen del sonido.</p:>
+    <p>Instrumetos electroacústicos o electromecánicos
+      Los ejemplos más claros son la guitarra eléctrica, el bajo eléctrico y el violín eléctrico. En todos ellos se ha sustituido la caja de resonancia por un sistema de pastillas y circuitos electrónicos, que transmiten el sonido a un amplificador o micrófono.
+      
+      Realmente son instrumentos de cuerda, el sistema para producir el sonido es de forma mecánica, bien sea pulsando o frotando las cuerdas. La diferencia es que, si no están conectados a la red eléctrica, apenas tienen volumen de sonido porque carecen de caja de resonancia.</p>
+</div>
+
+</body>
+</html>
